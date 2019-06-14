@@ -1,0 +1,86 @@
+package pojo;
+
+import java.util.List;
+
+public class Result {
+
+	private int result_id;
+	private Exam_type exam_type;
+	private List<Section> section;
+	private List<Standard> standard;
+	private List<Standard> standard_division;
+	private List<Student> student;
+	private Marks marks;
+	private Marks average;
+	private Marks parcentage;
+	private Marks grade;
+	private Marks status;
+	public int getResult_id() {
+		return result_id;
+	}
+	public void setResult_id(int result_id) {
+		this.result_id = result_id;
+	}
+	public Exam_type getExam_type() {
+		return exam_type;
+	}
+	public void setExam_type(Exam_type exam_type) {
+		this.exam_type = exam_type;
+	}
+	public List<Section> getSection() {
+		return section;
+	}
+	public void setSection(List<Section> section) {
+		this.section = section;
+	}
+	public List<Standard> getStandard() {
+		return standard;
+	}
+	public void setStandard(List<Standard> standard) {
+		this.standard = standard;
+	}
+	public List<Standard> getStandard_division() {
+		return standard_division;
+	}
+	public void setStandard_division(List<Standard> standard_division) {
+		this.standard_division = standard_division;
+	}
+	public List<Student> getStudent() {
+		return student;
+	}
+	public void setStudent(List<Student> student) {
+		this.student = student;
+	}
+	public Marks getMarks() {
+		return marks;
+	}
+	public void setMarks(Marks marks) {
+		this.marks = marks;
+	}
+	public Marks getAverage() {
+		return average;
+	}
+	public void setAverage(Marks average) {
+		this.average = average;
+	}
+	public Marks getParcentage() {
+		return parcentage;
+	}
+	public void setParcentage(Marks parcentage) {
+		this.parcentage = parcentage;
+	}
+	public Marks getGrade() {
+		return grade;
+	}
+	public void setGrade(Marks grade) {
+		this.grade = grade;
+	}
+	public Marks getStatus() {
+		return status;
+	}
+	public void setStatus(Marks status) {
+		this.status = status;
+	}
+	
+	
+}
