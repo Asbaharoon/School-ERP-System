@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:58:45 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Book" table="BOOK">
+        <id name="book_id" type="int">
+            <column name="BOOK_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="book_name" type="java.lang.String">
+            <column name="BOOK_NAME" />
+        </property>
+        <property name="book_author_name" type="java.lang.String">
+            <column name="BOOK_AUTHOR_NAME" />
+        </property>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one> 
+         <property name="book_image" type="binary">
+            <column name="BOOK_IMAGE" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

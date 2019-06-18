@@ -11,7 +11,7 @@ public class Librarian {
 	private Student student;
 	private Standard standard;
 	private Staff staff;
-	private List<Book> book;
+	private Book book;
 	
 	public int getLib_id() {
 		return lib_id;
@@ -55,12 +55,13 @@ public class Librarian {
 	public void setStaff(Staff staff) {
 		this.staff = staff;
 	}
-	public List<Book> getBook() {
+	public Book getBook() {
 		return book;
 	}
-	public void setBook(List<Book> book) {
+	public void setBook(Book book) {
 		this.book = book;
 	}
+	
 	
 	
 	

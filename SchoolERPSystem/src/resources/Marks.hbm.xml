@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:57:02 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Marks" table="MARKS">
+        <id name="marks_id" type="int">
+            <column name="MARKS_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="exam_type" class="pojo.Exam_type" fetch="join">
+            <column name="EXAM_TYPE" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="standard_division" class="pojo.Standard" fetch="join">
+            <column name="STANDARD_DIVISION" />
+        </many-to-one>
+        <many-to-one name="subject1" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT1" />
+        </many-to-one>
+        <many-to-one name="subject2" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT2" />
+        </many-to-one>
+        <many-to-one name="subject3" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT3" />
+        </many-to-one>
+        <many-to-one name="subject4" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT4" />
+        </many-to-one>
+        <many-to-one name="subject5" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT5" />
+        </many-to-one>
+        <many-to-one name="subject6" class="pojo.Subject" fetch="join">
+            <column name="SUBJECT6" />
+        </many-to-one>
+        <property name="totalmarks" type="java.lang.String">
+            <column name="TOTALMARKS" />
+        </property>
+        <property name="average" type="double">
+            <column name="AVERAGE" />
+        </property>
+        <property name="parcentage" type="double">
+            <column name="PARCENTAGE" />
+        </property>
+        <property name="grade" type="java.lang.String">
+            <column name="GRADE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

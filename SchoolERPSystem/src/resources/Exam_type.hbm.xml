@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:57:02 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Exam_type" table="EXAM_TYPE">
+        <id name="ex_id" type="int">
+            <column name="EX_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="ex_name" type="java.lang.String">
+            <column name="EX_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

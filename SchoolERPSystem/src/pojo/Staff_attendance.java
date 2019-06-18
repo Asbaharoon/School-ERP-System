@@ -8,7 +8,7 @@ public class Staff_attendance {
 	private Staff_type staff_type;
 	private String Staff_attendance;
 	private String Staff_att_date;
-	private List<Staff> staff;
+	private Staff staff;
 	private double totalattendance;
 	
 	
@@ -42,12 +42,13 @@ public class Staff_attendance {
 	public void setStaff_att_date(String staff_att_date) {
 		Staff_att_date = staff_att_date;
 	}
-	public List<Staff> getStaff() {
+	public Staff getStaff() {
 		return staff;
 	}
-	public void setStaff(List<Staff> staff) {
+	public void setStaff(Staff staff) {
 		this.staff = staff;
 	}
+	
 	
 		
 	

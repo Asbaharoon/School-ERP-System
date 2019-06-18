@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:29:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Staff" table="STAFF">
+        <id name="Staff_id" type="int">
+            <column name="STAFF_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="Staff_name" type="java.lang.String">
+            <column name="STAFF_NAME" />
+        </property>
+       
+        
+        <property name="Staff_photo" type="binary">
+            <column name="STAFF_PHOTO" />
+        </property>
+        
+        <property name="Staff_proof" type="binary">
+            <column name="STAFF_PROOF" />
+        </property>
+        
+        <property name="Staff_class" type="java.lang.String">
+            <column name="STAFF_CLASS" />
+        </property>
+        <property name="Staff_subject" type="java.lang.String">
+            <column name="STAFF_SUBJECT" />
+        </property>
+        <property name="Staff_gender" type="java.lang.String">
+            <column name="STAFF_GENDER" />
+        </property>
+        <property name="Staff_dob" type="java.lang.String">
+            <column name="STAFF_DOB" />
+        </property>
+        <property name="Staff_mob" type="java.lang.String">
+            <column name="STAFF_MOB" />
+        </property>
+        <property name="Staff_email" type="java.lang.String">
+            <column name="STAFF_EMAIL" />
+        </property>
+        <property name="Staff_pass" type="java.lang.String">
+            <column name="STAFF_PASS" />
+        </property>
+        <property name="Staff_qulification" type="java.lang.String">
+            <column name="STAFF_QULIFICATION" />
+        </property>
+        <property name="Staff_date" type="java.lang.String">
+            <column name="STAFF_DATE" />
+        </property>
+        <property name="Add_line" type="java.lang.String">
+            <column name="ADD_LINE" />
+        </property>
+        <property name="Add_city" type="java.lang.String">
+            <column name="ADD_CITY" />
+        </property>
+        <property name="Add_state" type="java.lang.String">
+            <column name="ADD_STATE" />
+        </property>
+        <property name="Add_pincode" type="java.lang.String">
+            <column name="ADD_PINCODE" />
+        </property>
+        <property name="salary" type="double">
+            <column name="SALARY" />
+        </property>
+        <many-to-one name="stafftype" class="pojo.Staff_type" fetch="join">
+            <column name="STAFFTYPE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

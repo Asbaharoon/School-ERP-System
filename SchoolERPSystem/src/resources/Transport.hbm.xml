@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:51:57 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Transport" table="TRANSPORT">
+        <id name="trans_id" type="int">
+            <column name="TRANS_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="routename" type="java.lang.String">
+            <column name="ROUTENAME" />
+        </property>
+        <property name="vehicle_no" type="java.lang.String">
+            <column name="VEHICLE_NO" />
+        </property>
+        <property name="drivername" type="java.lang.String">
+            <column name="DRIVERNAME" />
+        </property>
+        <property name="phone_no" type="java.lang.String">
+            <column name="PHONE_NO" />
+        </property>
+        <list name="student" table="STUDENT" lazy="true" cascade="all">
+            <key update="true">
+                <column name="TRANS_ID" />
+            </key>
+            <index column="type"></index>
+            <one-to-many class="pojo.Student" />
+        </list>
+    </class>
+</hibernate-mapping>

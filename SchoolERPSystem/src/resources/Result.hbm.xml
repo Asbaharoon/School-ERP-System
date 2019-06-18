@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:11:35 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Result" table="RESULT">
+        <id name="result_id" type="int">
+            <column name="RESULT_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="exam_type" class="pojo.Exam_type" fetch="join">
+            <column name="EXAM_TYPE" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="standard_division" class="pojo.Standard" fetch="join">
+            <column name="STANDARD_DIVISION" />
+        </many-to-one>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+        <many-to-one name="marks" class="pojo.Marks" fetch="join">
+            <column name="MARKS" />
+        </many-to-one>
+        <many-to-one name="average" class="pojo.Marks" fetch="join">
+            <column name="AVERAGE" />
+        </many-to-one>
+        <many-to-one name="parcentage" class="pojo.Marks" fetch="join">
+            <column name="PARCENTAGE" />
+        </many-to-one>
+        <many-to-one name="grade" class="pojo.Marks" fetch="join">
+            <column name="GRADE" />
+        </many-to-one>
+        <many-to-one name="status" class="pojo.Marks" fetch="join">
+            <column name="STATUS" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

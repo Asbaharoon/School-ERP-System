@@ -6,9 +6,9 @@ public class Timetable {
 
 	private int time_id;
 	private Timetable_type timetable_type;
-	private List<Section> section;
-	private List<Standard> standard;
-	private List<Standard> standard_division;
+	private Section section;
+	private Standard standard;
+	private Standard standard_division;
 	private byte[] tt_image;
 	
 	public int getTime_id() {
@@ -23,22 +23,23 @@ public class Timetable {
 	public void setTimetable_type(Timetable_type timetable_type) {
 		this.timetable_type = timetable_type;
 	}
-	public List<Section> getSection() {
+	
+	public Section getSection() {
 		return section;
 	}
-	public void setSection(List<Section> section) {
+	public void setSection(Section section) {
 		this.section = section;
 	}
-	public List<Standard> getStandard() {
+	public Standard getStandard() {
 		return standard;
 	}
-	public void setStandard(List<Standard> standard) {
+	public void setStandard(Standard standard) {
 		this.standard = standard;
 	}
-	public List<Standard> getStandard_division() {
+	public Standard getStandard_division() {
 		return standard_division;
 	}
-	public void setStandard_division(List<Standard> standard_division) {
+	public void setStandard_division(Standard standard_division) {
 		this.standard_division = standard_division;
 	}
 	public byte[] getTt_image() {

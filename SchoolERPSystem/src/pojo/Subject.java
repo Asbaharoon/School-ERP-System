@@ -5,21 +5,10 @@ public class Subject {
 	private int Subject_id;
 	private String Subject_name;
 	private Section section;
-	private Staff staff;
-	
-	public Staff getStaff() {
-		return staff;
-	}
-	public void setStaff(Staff staff) {
-		this.staff = staff;
-	}
-	public Standard getStandard() {
-		return standard;
-	}
-	public void setStandard(Standard standard) {
-		this.standard = standard;
-	}
 	private Standard standard;
+	private Standard standard_division;
+	private Staff_type staff_type;
+	private Staff staff;
 	
 	public int getSubject_id() {
 		return Subject_id;
@@ -39,6 +28,32 @@ public class Subject {
 	public void setSection(Section section) {
 		this.section = section;
 	}
+	public Standard getStandard() {
+		return standard;
+	}
+	public void setStandard(Standard standard) {
+		this.standard = standard;
+	}
+	public Standard getStandard_division() {
+		return standard_division;
+	}
+	public void setStandard_division(Standard standard_division) {
+		this.standard_division = standard_division;
+	}
+	public Staff_type getStaff_type() {
+		return staff_type;
+	}
+	public void setStaff_type(Staff_type staff_type) {
+		this.staff_type = staff_type;
+	}
+	public Staff getStaff() {
+		return staff;
+	}
+	public void setStaff(Staff staff) {
+		this.staff = staff;
+	}
+	
+	
 	
 	
 	

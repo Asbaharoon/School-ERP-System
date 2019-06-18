@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:09:22 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Leave" table="LEAVE">
+        <id name="leave_id" type="int">
+            <column name="LEAVE_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="Staff" class="pojo.Staff" fetch="join">
+            <column name="STAFF" />
+        </many-to-one>
+        <many-to-one name="staff_type" class="pojo.Staff_type" fetch="join">
+            <column name="STAFF_TYPE" />
+        </many-to-one>
+        <property name="leave_title" type="java.lang.String">
+            <column name="LEAVE_TITLE" />
+        </property>
+        <property name="from_date" type="java.lang.String">
+            <column name="FROM_DATE" />
+        </property>
+        <property name="to_date" type="java.lang.String">
+            <column name="TO_DATE" />
+        </property>
+        <property name="reason" type="java.lang.String">
+            <column name="REASON" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:01:49 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Fees" table="FEES">
+        <id name="fee_id" type="int">
+            <column name="FEE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <property name="amt_paid" type="double">
+            <column name="AMT_PAID" />
+        </property>
+        <property name="amt_remaining" type="double">
+            <column name="AMT_REMAINING" />
+        </property>
+        <property name="trans_paid" type="double">
+            <column name="TRANS_PAID" />
+        </property>
+        <property name="trans_remaining" type="double">
+            <column name="TRANS_REMAINING" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard_div" class="pojo.Standard" fetch="join">
+            <column name="STANDARD_DIV" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

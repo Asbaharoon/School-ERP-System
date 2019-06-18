@@ -1,54 +1,56 @@
 package pojo;
 
-import java.util.List;
-
 public class Result {
 
 	private int result_id;
 	private Exam_type exam_type;
-	private List<Section> section;
-	private List<Standard> standard;
-	private List<Standard> standard_division;
-	private List<Student> student;
+	private Section section;
+	private Standard standard;
+	private Standard standard_division;
+	private Student student;
 	private Marks marks;
 	private Marks average;
 	private Marks parcentage;
 	private Marks grade;
 	private Marks status;
+	
+	
 	public int getResult_id() {
 		return result_id;
 	}
 	public void setResult_id(int result_id) {
 		this.result_id = result_id;
 	}
+	
+	
 	public Exam_type getExam_type() {
 		return exam_type;
 	}
 	public void setExam_type(Exam_type exam_type) {
 		this.exam_type = exam_type;
 	}
-	public List<Section> getSection() {
+	public Section getSection() {
 		return section;
 	}
-	public void setSection(List<Section> section) {
+	public void setSection(Section section) {
 		this.section = section;
 	}
-	public List<Standard> getStandard() {
+	public Standard getStandard() {
 		return standard;
 	}
-	public void setStandard(List<Standard> standard) {
+	public void setStandard(Standard standard) {
 		this.standard = standard;
 	}
-	public List<Standard> getStandard_division() {
+	public Standard getStandard_division() {
 		return standard_division;
 	}
-	public void setStandard_division(List<Standard> standard_division) {
+	public void setStandard_division(Standard standard_division) {
 		this.standard_division = standard_division;
 	}
-	public List<Student> getStudent() {
+	public Student getStudent() {
 		return student;
 	}
-	public void setStudent(List<Student> student) {
+	public void setStudent(Student student) {
 		this.student = student;
 	}
 	public Marks getMarks() {

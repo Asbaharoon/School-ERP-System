@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:58:45 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Librarian" table="LIBRARIAN">
+        <id name="lib_id" type="int">
+            <column name="LIB_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="issue_date" type="java.lang.String">
+            <column name="ISSUE_DATE" />
+        </property>
+        <property name="return_date" type="java.lang.String">
+            <column name="RETURN_DATE" />
+        </property>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="staff" class="pojo.Staff" fetch="join">
+            <column name="STAFF" />
+        </many-to-one>
+        <many-to-one name="book" class="pojo.Book" fetch="join">
+            <column name="BOOK" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

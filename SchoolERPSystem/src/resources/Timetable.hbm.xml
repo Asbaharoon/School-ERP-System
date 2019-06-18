@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:47:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Timetable" table="TIMETABLE">
+        <id name="time_id" type="int">
+            <column name="TIME_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="timetable_type" class="pojo.Timetable_type" fetch="join">
+            <column name="TIMETABLE_TYPE" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="standard_division" class="pojo.Standard" fetch="join">
+            <column name="STANDARD_DIVISION" />
+        </many-to-one>       
+        <property name="tt_image" type="binary">
+            <column name="TT_IMAGE" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

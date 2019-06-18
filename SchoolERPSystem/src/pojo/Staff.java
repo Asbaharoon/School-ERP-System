@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.List;
+
 public class Staff {
 
 	private int Staff_id;
@@ -15,10 +17,13 @@ public class Staff {
 	private String Staff_pass;
 	private String Staff_qulification;
 	private String Staff_date;
-	private Address Staff_address;
-	private Staff_type stafftype;
+	private String Add_line;
+	private String Add_city;
+	private String Add_state;
+	private String Add_pincode;
 	private double salary;
 	
+	private Staff_type stafftype;
 		
 	public double getSalary() {
 		return salary;
@@ -104,11 +109,30 @@ public class Staff {
 	public void setStaff_date(String staff_date) {
 		Staff_date = staff_date;
 	}
-	public Address getStaff_address() {
-		return Staff_address;
+	
+	public String getAdd_line() {
+		return Add_line;
 	}
-	public void setStaff_address(Address staff_address) {
-		Staff_address = staff_address;
+	public void setAdd_line(String add_line) {
+		Add_line = add_line;
+	}
+	public String getAdd_city() {
+		return Add_city;
+	}
+	public void setAdd_city(String add_city) {
+		Add_city = add_city;
+	}
+	public String getAdd_state() {
+		return Add_state;
+	}
+	public void setAdd_state(String add_state) {
+		Add_state = add_state;
+	}
+	public String getAdd_pincode() {
+		return Add_pincode;
+	}
+	public void setAdd_pincode(String add_pincode) {
+		Add_pincode = add_pincode;
 	}
 	public Staff_type getStafftype() {
 		return stafftype;
@@ -116,7 +140,6 @@ public class Staff {
 	public void setStafftype(Staff_type stafftype) {
 		this.stafftype = stafftype;
 	}
-
 	
 	
 

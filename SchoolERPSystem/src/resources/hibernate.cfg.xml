@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/schoolerp</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <mapping resource="resources/Admin.hbm.xml"/>
+  <mapping resource="resources/Book.hbm.xml"/>
+  <mapping resource="resources/Event.hbm.xml"/>
+  <mapping resource="resources/Event_participent.hbm.xml"/>
+  <mapping resource="resources/Event_type.hbm.xml"/>
+  <mapping resource="resources/Exam_type.hbm.xml"/>
+  <mapping resource="resources/Fees.hbm.xml"/>
+  <mapping resource="resources/Leave.hbm.xml"/>
+  <mapping resource="resources/Librarian.hbm.xml"/>
+  <mapping resource="resources/Marks.hbm.xml"/>
+  <mapping resource="resources/Notices.hbm.xml"/>
+  <mapping resource="resources/Result.hbm.xml"/>
+  <mapping resource="resources/Salary.hbm.xml"/>
+  <mapping resource="resources/Section.hbm.xml"/>
+  <mapping resource="resources/Staff.hbm.xml"/>
+  <mapping resource="resources/Staff_attendance.hbm.xml"/>
+  <mapping resource="resources/Staff_type.hbm.xml"/>
+  <mapping resource="resources/Standard.hbm.xml"/>
+  <mapping resource="resources/Student.hbm.xml"/>
+  <mapping resource="resources/Student_attendance.hbm.xml"/>
+  <mapping resource="resources/Subject.hbm.xml"/>
+  <mapping resource="resources/Timetable.hbm.xml"/>
+  <mapping resource="resources/Timetable_type.hbm.xml"/>
+  <mapping resource="resources/Transport.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

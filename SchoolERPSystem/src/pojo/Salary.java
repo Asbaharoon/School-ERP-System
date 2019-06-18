@@ -6,11 +6,12 @@ public class Salary {
 
 	private int sal_id;
 	private Staff_type staff_type;
-	private List<Staff> staff;
+	private Staff staff;
 	private Staff staff_salary;
 	private Staff_attendance staff_attendance;
 	private String date;
 	private String payable_amount;
+	private String remaning_amount;
 	private String status;
 	
 	
@@ -20,16 +21,24 @@ public class Salary {
 	public void setSal_id(int sal_id) {
 		this.sal_id = sal_id;
 	}
+	
+	public String getRemaning_amount() {
+		return remaning_amount;
+	}
+	public void setRemaning_amount(String remaning_amount) {
+		this.remaning_amount = remaning_amount;
+	}
 	public Staff_type getStaff_type() {
 		return staff_type;
 	}
 	public void setStaff_type(Staff_type staff_type) {
 		this.staff_type = staff_type;
 	}
-	public List<Staff> getStaff() {
+	
+	public Staff getStaff() {
 		return staff;
 	}
-	public void setStaff(List<Staff> staff) {
+	public void setStaff(Staff staff) {
 		this.staff = staff;
 	}
 	public Staff getStaff_salary() {

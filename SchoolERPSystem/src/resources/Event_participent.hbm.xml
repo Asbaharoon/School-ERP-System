@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:07:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Event_participent" table="EVENT_PARTICIPENT">
+        <id name="event_par_id" type="int">
+            <column name="EVENT_PAR_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="student_name" type="java.lang.String">
+            <column name="STUDENT_NAME" />
+        </property>
+        <property name="father_name" type="java.lang.String">
+            <column name="FATHER_NAME" />
+        </property>
+        <many-to-one name="event_type" class="pojo.Event_type" fetch="join">
+            <column name="EVENT_TYPE" />
+        </many-to-one>
+        <many-to-one name="event_title" class="pojo.Event" fetch="join">
+            <column name="EVENT_TITLE" />
+        </many-to-one>
+        <property name="event_role" type="java.lang.String">
+            <column name="EVENT_ROLE" />
+        </property>
+    </class>
+</hibernate-mapping>

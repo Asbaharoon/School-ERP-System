@@ -4,6 +4,7 @@ public class Exam_type {
 
 	private int ex_id;
 	private String ex_name;
+	
 	public int getEx_id() {
 		return ex_id;
 	}

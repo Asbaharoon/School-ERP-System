@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:43:12 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Student_attendance" table="STUDENT_ATTENDANCE">
+        <id name="att_id" type="int">
+            <column name="ATT_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="stud_attendance" type="java.lang.String">
+            <column name="STUD_ATTENDANCE" />
+        </property>
+        <property name="att_date" type="java.lang.String">
+            <column name="ATT_DATE" />
+        </property>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

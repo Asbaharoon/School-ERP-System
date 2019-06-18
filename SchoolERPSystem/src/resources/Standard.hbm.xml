@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:29:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Standard" table="STANDARD">
+        <id name="Standard_id" type="int">
+            <column name="STANDARD_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="Standard_name" type="java.lang.String">
+            <column name="STANDARD_NAME" />
+        </property>
+        <property name="Standard_division" type="java.lang.String">
+            <column name="STANDARD_DIVISION" />
+        </property>
+        <property name="Totalfees" type="double">
+            <column name="TOTALFEES" />
+        </property>
+        <property name="Transportfees" type="double">
+            <column name="TRANSPORTFEES" />
+        </property>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="staff" class="pojo.Staff" fetch="join">
+            <column name="STAFF" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

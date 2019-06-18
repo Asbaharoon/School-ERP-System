@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:05:29 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Salary" table="SALARY">
+        <id name="sal_id" type="int">
+            <column name="SAL_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="staff_type" class="pojo.Staff_type" fetch="join">
+            <column name="STAFF_TYPE" />
+        </many-to-one>
+        <many-to-one name="staff" class="pojo.Staff" fetch="join">
+            <column name="STAFF" />
+        </many-to-one>
+        <many-to-one name="staff_salary" class="pojo.Staff" fetch="join">
+            <column name="STAFF_SALARY" />
+        </many-to-one>
+        <many-to-one name="staff_attendance" class="pojo.Staff_attendance" fetch="join">
+            <column name="STAFF_ATTENDANCE" />
+        </many-to-one>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <property name="payable_amount" type="java.lang.String">
+            <column name="PAYABLE_AMOUNT" />
+        </property>
+        <property name="remaning_amount" type="java.lang.String">
+            <column name="REMANING_AMOUNT" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

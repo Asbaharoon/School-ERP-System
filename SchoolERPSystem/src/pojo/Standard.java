@@ -7,7 +7,9 @@ public class Standard {
 	private String Standard_division;
 	private double Totalfees;
 	private double Transportfees;
+	
 	private Section section;
+	
 	private Staff staff;
 
 	

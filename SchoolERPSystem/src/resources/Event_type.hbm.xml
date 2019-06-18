@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 5:07:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Event_type" table="EVENT_TYPE">
+        <id name="event_type_id" type="int">
+            <column name="EVENT_TYPE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="event_type_name" type="java.lang.String">
+            <column name="EVENT_TYPE_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:29:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Student" table="STUDENT">
+        <id name="Stud_id" type="int">
+            <column name="STUD_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="Stud_enroll_no" type="java.lang.String">
+            <column name="STUD_ENROLL_NO" />
+        </property>
+        <property name="Stud_name" type="java.lang.String">
+            <column name="STUD_NAME" />
+        </property>
+
+         <property name="Stud_photo" type="binary">
+            <column name="Stud_photo" />
+        </property>
+        
+        <property name="Stud_proof" type="binary">
+            <column name="STUD_PROOF" />
+        </property>
+        
+        <property name="Stud_gender" type="java.lang.String">
+            <column name="STUD_GENDER" />
+        </property>
+        <property name="Stud_dob" type="java.lang.String">
+            <column name="STUD_DOB" />
+        </property>
+        <property name="par_mob" type="java.lang.String">
+            <column name="PAR_MOB" />
+        </property>
+        <property name="Stud_email" type="java.lang.String">
+            <column name="STUD_EMAIL" />
+        </property>
+        <property name="Stud_pass" type="java.lang.String">
+            <column name="STUD_PASS" />
+        </property>
+        <property name="Stud_date" type="java.lang.String">
+            <column name="STUD_DATE" />
+        </property>
+        <property name="Stud_status" type="java.lang.String">
+            <column name="STUD_STATUS" />
+        </property>
+        <property name="Add_line" type="java.lang.String">
+            <column name="ADD_LINE" />
+        </property>
+        <property name="Add_city" type="java.lang.String">
+            <column name="ADD_CITY" />
+        </property>
+        <property name="Add_state" type="java.lang.String">
+            <column name="ADD_STATE" />
+        </property>
+        <property name="Add_pincode" type="java.lang.String">
+            <column name="ADD_PINCODE" />
+        </property>
+        <property name="total_fees" type="double">
+            <column name="TOTAL_FEES" />
+        </property>
+        <property name="trans_fees" type="double">
+            <column name="TRANS_FEES" />
+        </property>
+        <many-to-one name="Stud_standard" class="pojo.Standard" fetch="join">
+            <column name="STUD_STANDARD" />
+        </many-to-one>
+        <many-to-one name="Stud_division" class="pojo.Standard" fetch="join">
+            <column name="STUD_DIVISION" />
+        </many-to-one>
+        <many-to-one name="Section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 4:47:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Timetable_type" table="TIMETABLE_TYPE">
+        <id name="tt_id" type="int">
+            <column name="TT_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="tt_name" type="java.lang.String">
+            <column name="TT_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

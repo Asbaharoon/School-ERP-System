@@ -1,5 +1,6 @@
 package pojo;
 
+
 public class Admin {
 
 	private int Admin_id;
