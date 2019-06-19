@@ -13,10 +13,10 @@
                         <li>Admin</li>
                     </ul>
                 </div>
-                <!-- Breadcubs Arrea End Here -->
+                <!-- Breadcubs Area End Here -->
                 <!-- Dashboard summery Start Here -->
                 
-                <!-- <div class="row guttters-20">
+                <!-- <div class="row gutters-20">
                     <div class="col-lg-3 col-sm-6 col-12">
                         <div class="card dashboard-card-seven">
                             <div class="social-media bg-fb hover-fb">

@@ -18,7 +18,6 @@
   <mapping resource="resources/Fees.hbm.xml"/>
   <mapping resource="resources/Leave.hbm.xml"/>
   <mapping resource="resources/Librarian.hbm.xml"/>
-  <mapping resource="resources/Marks.hbm.xml"/>
   <mapping resource="resources/Notices.hbm.xml"/>
   <mapping resource="resources/Result.hbm.xml"/>
   <mapping resource="resources/Salary.hbm.xml"/>
@@ -33,5 +32,8 @@
   <mapping resource="resources/Timetable.hbm.xml"/>
   <mapping resource="resources/Timetable_type.hbm.xml"/>
   <mapping resource="resources/Transport.hbm.xml"/>
+  <mapping resource="resources/Marks_Commerce.hbm.xml"/>
+  <mapping resource="resources/Marks_Science.hbm.xml"/>
+  <mapping resource="resources/Marks.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

@@ -1,4 +1,14 @@
+<%@page import="dao.SectionDao"%>
+<%@page import="pojo.Section"%>
 <%@ include file="header.jsp"%>
+<%@page import="java.util.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%
+	List<Section> sectionlist= SectionDao.getAllSection();
+     request.setAttribute("sectionlist", sectionlist);
+%>
+
 <div class="dashboard-content-one">
 	<!-- Breadcubs Area Start Here -->
 	<div class="breadcrumbs-area">
@@ -30,24 +40,45 @@
 					</div>
 				</div>
 			</div>
-			<form class="new-added-form">
+			<form class="new-added-form" action="AddStandardServlet" method="post">
 				<div class="row">
 					<div class="col-xl-4 col-lg-6 col-12 form-group">
-						<label>Section *</label> <select class="select2">
-							<option value="">Please Select Class *</option>
-							<option value="1">Play</option>
-							<option value="2">Nursery</option>
-							<option value="3">One</option>
-							<option value="3">Two</option>
-							<option value="3">Three</option>
-							<option value="3">Four</option>
-							<option value="3">Five</option>
+						<label>Section *</label> <select class="select2" name="sec_name">
+						<option value="" >Select Section Name</option>
+							<c:forEach items="${sectionlist}" var="x">
+							<option value="${x.getSection_id()}">${x.getSection_name()}</option>
+							</c:forEach>
 						</select>
 					</div>
 					<div class="col-xl-4 col-lg-6 col-12 form-group">
-						<label>Standard Name *</label> <input type="text" placeholder=""
+						<label>Standard Name *</label> <input type="text" name="std_name"  placeholder=""
 							class="form-control">
 					</div>
+					
+					<div class="col-xl-4 col-lg-6 col-12 form-group">
+						<label>Division name *</label> <input type="text" name="div_name" placeholder=""
+							class="form-control">
+					</div>
+					
+					<div class="col-xl-4 col-lg-6 col-12 form-group">
+						<label>Total Fees *</label> <input type="text" name="totalfee"  placeholder=""
+							class="form-control">
+					</div>
+					
+					<div class="col-xl-4 col-lg-6 col-12 form-group">
+						<label>Transport Fees *</label> <input type="text" name="tra_fees"  placeholder=""
+							class="form-control">
+					</div>
+					
+					<div class="col-xl-4 col-lg-6 col-12 form-group">
+						<label>Section *</label> <select class="select2" name="staff">
+							<c:forEach items="${sectionlist}" var="x">
+							<option value="${x.getSection_id()}">${x.getSection_name()}</option>
+							</c:forEach>
+						</select>
+					</div>
+					
+					
 					<div class="col-md-3 d-none d-xl-block form-group"></div>
 					<div class="col-12 form-group mg-t-8">
 						<button type="submit"

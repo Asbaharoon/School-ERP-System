@@ -365,22 +365,33 @@
                             <ul class="nav sub-group-menu">
                               
                                 <li class="nav-item">
-                                    <a href="add-section.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                    <a href="add-timetable-type.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add
                                         Time-Table Type</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-standard.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add New
+                                    <a href="add time-table.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add New
                                         Time-Table</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="add-division.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add New
-                                        Division</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="all-subject.html" class="nav-link"><i
+                            <a href="add-subject.jsp" class="nav-link"><i
                                     class="flaticon-open-book"></i><span>Subject</span></a>
+                        </li>
+                         <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i
+                                    class="flaticon-maths-class-materials-cross-of-a-pencil-and-a-ruler"></i><span>Event</span></a>
+                            <ul class="nav sub-group-menu">
+                              
+                                <li class="nav-item">
+                                    <a href="add-event-type.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                        Event Type</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-event.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add New
+                                        Event</a>
+                                </li>
+                            </ul>
                         </li>
                        <!--  <li class="nav-item">
                             <a href="class-routine.html" class="nav-link"><i class="flaticon-calendar"></i><span>Class
@@ -395,24 +406,24 @@
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
                                     <a href="exam-schedule.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
-                                        Schedule</a>
+                                       -Type</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="exam-grade.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
-                                        Grades</a>
+                                    <a href="add-mark.jsp" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                        Mark</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="transport.html" class="nav-link"><i
+                            <a href="add-transport.jsp" class="nav-link"><i
                                     class="flaticon-bus-side-view"></i><span>Transport</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="hostel.html" class="nav-link"><i class="flaticon-bed"></i><span>Time Table</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="notice-board.html" class="nav-link"><i
-                                    class="flaticon-script"></i><span>Event</span></a>
+                            <a href="add-notice.jsp" class="nav-link"><i
+                                    class="flaticon-script"></i><span>Notice</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="messaging.html" class="nav-link"><i

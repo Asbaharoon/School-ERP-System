@@ -9,18 +9,19 @@ public class Marks {
 	private Section section;
 	private Standard standard;
 	private Standard standard_division;
-	private Subject subject1;
-	private Subject subject2;
-	private Subject subject3;
-	private Subject subject4;
-	private Subject subject5;
-	private Subject subject6;
+	private String Maths;
+	private String Science;
+	private String Gujarati;
+	private String Hindi;
+	private String English;
+	private String Social_science;
 	private String totalmarks;
 	private double average;
 	private double parcentage;
 	private String grade;
 	private String status;
 	private Student student;
+	
 	
 	public int getMarks_id() {
 		return marks_id;
@@ -52,41 +53,41 @@ public class Marks {
 	public void setStandard_division(Standard standard_division) {
 		this.standard_division = standard_division;
 	}
-	public Subject getSubject1() {
-		return subject1;
+	public String getMaths() {
+		return Maths;
 	}
-	public void setSubject1(Subject subject1) {
-		this.subject1 = subject1;
+	public void setMaths(String maths) {
+		Maths = maths;
 	}
-	public Subject getSubject2() {
-		return subject2;
+	public String getScience() {
+		return Science;
 	}
-	public void setSubject2(Subject subject2) {
-		this.subject2 = subject2;
+	public void setScience(String science) {
+		Science = science;
 	}
-	public Subject getSubject3() {
-		return subject3;
+	public String getGujarati() {
+		return Gujarati;
 	}
-	public void setSubject3(Subject subject3) {
-		this.subject3 = subject3;
+	public void setGujarati(String gujarati) {
+		Gujarati = gujarati;
 	}
-	public Subject getSubject4() {
-		return subject4;
+	public String getHindi() {
+		return Hindi;
 	}
-	public void setSubject4(Subject subject4) {
-		this.subject4 = subject4;
+	public void setHindi(String hindi) {
+		Hindi = hindi;
 	}
-	public Subject getSubject5() {
-		return subject5;
+	public String getEnglish() {
+		return English;
 	}
-	public void setSubject5(Subject subject5) {
-		this.subject5 = subject5;
+	public void setEnglish(String english) {
+		English = english;
 	}
-	public Subject getSubject6() {
-		return subject6;
+	public String getSocial_science() {
+		return Social_science;
 	}
-	public void setSubject6(Subject subject6) {
-		this.subject6 = subject6;
+	public void setSocial_science(String social_science) {
+		Social_science = social_science;
 	}
 	public String getTotalmarks() {
 		return totalmarks;
@@ -125,7 +126,5 @@ public class Marks {
 		this.student = student;
 	}
 	
-			
-	
-	
+		
 }

@@ -30,10 +30,11 @@
 					</div>
 				</div>
 			</div>
-			<form class="new-added-form">
+			<form class="new-added-form" action="AddSectionServlet" method="post">
+			
 				<div class="row">
 					<div class="col-xl-4 col-lg-6 col-12 form-group">
-						<label>Section Name *</label> <input type="text" placeholder=""
+						<label>Section Name *</label> <input type="text" name="name"  placeholder=""
 							class="form-control">
 					</div>
 					<div class="col-md-3 d-none d-xl-block form-group"></div>

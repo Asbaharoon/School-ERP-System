@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Jun 17, 2019 4:57:02 PM by Hibernate Tools 3.5.0.Final -->
+<!-- Generated Jun 18, 2019 3:20:03 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="pojo.Marks" table="MARKS">
         <id name="marks_id" type="int">
@@ -20,24 +20,24 @@
         <many-to-one name="standard_division" class="pojo.Standard" fetch="join">
             <column name="STANDARD_DIVISION" />
         </many-to-one>
-        <many-to-one name="subject1" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT1" />
-        </many-to-one>
-        <many-to-one name="subject2" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT2" />
-        </many-to-one>
-        <many-to-one name="subject3" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT3" />
-        </many-to-one>
-        <many-to-one name="subject4" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT4" />
-        </many-to-one>
-        <many-to-one name="subject5" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT5" />
-        </many-to-one>
-        <many-to-one name="subject6" class="pojo.Subject" fetch="join">
-            <column name="SUBJECT6" />
-        </many-to-one>
+        <property name="Maths" type="java.lang.String">
+            <column name="MATHS" />
+        </property>
+        <property name="Science" type="java.lang.String">
+            <column name="SCIENCE" />
+        </property>
+        <property name="Gujarati" type="java.lang.String">
+            <column name="GUJARATI" />
+        </property>
+        <property name="Hindi" type="java.lang.String">
+            <column name="HINDI" />
+        </property>
+        <property name="English" type="java.lang.String">
+            <column name="ENGLISH" />
+        </property>
+        <property name="Social_science" type="java.lang.String">
+            <column name="SOCIAL_SCIENCE" />
+        </property>
         <property name="totalmarks" type="java.lang.String">
             <column name="TOTALMARKS" />
         </property>

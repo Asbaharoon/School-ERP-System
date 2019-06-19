@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 18, 2019 3:22:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Marks_Science" table="MARKS_SCIENCE">
+        <id name="marks_sid" type="int">
+            <column name="MARKS_SID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="exam_type" class="pojo.Exam_type" fetch="join">
+            <column name="EXAM_TYPE" />
+        </many-to-one>
+        <many-to-one name="section" class="pojo.Section" fetch="join">
+            <column name="SECTION" />
+        </many-to-one>
+        <many-to-one name="standard" class="pojo.Standard" fetch="join">
+            <column name="STANDARD" />
+        </many-to-one>
+        <many-to-one name="standard_division" class="pojo.Standard" fetch="join">
+            <column name="STANDARD_DIVISION" />
+        </many-to-one>
+        <property name="Physics" type="java.lang.String">
+            <column name="PHYSICS" />
+        </property>
+        <property name="Chemistry" type="java.lang.String">
+            <column name="CHEMISTRY" />
+        </property>
+        <property name="English" type="java.lang.String">
+            <column name="ENGLISH" />
+        </property>
+        <property name="Maths" type="java.lang.String">
+            <column name="MATHS" />
+        </property>
+        <property name="Computer" type="java.lang.String">
+            <column name="COMPUTER" />
+        </property>
+        <property name="Biology" type="java.lang.String">
+            <column name="BIOLOGY" />
+        </property>
+        <property name="average" type="double">
+            <column name="AVERAGE" />
+        </property>
+        <property name="parcentage" type="double">
+            <column name="PARCENTAGE" />
+        </property>
+        <property name="grade" type="java.lang.String">
+            <column name="GRADE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <many-to-one name="student" class="pojo.Student" fetch="join">
+            <column name="STUDENT" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
